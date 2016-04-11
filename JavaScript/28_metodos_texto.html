@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Método de Texto</title>
+</head>
+<body>
+	<h1>Método de Texto</h1>
+	<hr>
+	<ul id="salida"></ul>
+	<script>
+	var salida = document.getElementById('salida');
+	var cadena = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
+
+	// Texto o cadena
+	salida.innerHTML += '<li>Texto: '+cadena+'</li>';
+	// Longitud de Caracteres
+	salida.innerHTML += '<li>Longitud: '+cadena.length+'</li>';
+	// Cortar cadena
+	salida.innerHTML += '<li>Cortar: '+cadena.substring(0, 12)+'</li>';
+	// Cambiar cadena
+	salida.innerHTML += '<li>Cambiar: '+cadena.replace('Ipsum', 'ADSI')+'</li>';
+	// Minúscula
+	salida.innerHTML += '<li>Minúscula: '+cadena.toLowerCase()+'</li>';
+	// Mayúscula
+	salida.innerHTML += '<li>Mayúscula: '+cadena.toUpperCase()+'</li>';
+	</script>
+</body>
+</html>
